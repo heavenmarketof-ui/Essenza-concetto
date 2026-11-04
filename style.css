@@ -27,3 +27,15 @@ footer .logo img{filter:brightness(0) invert(1);opacity:.86}
 @media(max-width:1050px){header{padding:0 3%;gap:12px}header .logo{width:220px}header nav{gap:15px;font-size:13px}.navcta{padding:13px 17px}}
 @media(max-width:850px){header{height:86px;padding:0 5%}header .logo{width:220px}header nav{display:none}.hero{grid-template-columns:1fr}.herocopy{padding:65px 8%}.hero img{height:430px;min-height:430px;max-height:none}}
 @media(max-width:550px){header{height:76px}header .logo{width:175px}.navcta{font-size:10px;padding:12px 11px}.hero h1{font-size:clamp(42px,11vw,58px)}.hero p{font-size:16px}.herocopy{padding:65px 7%}.hero img{height:330px;min-height:330px}.cards{grid-template-columns:1fr}}
+
+/* Editorial hero inspired by approved Essenza reference */
+header{height:116px;background:#fbf7f0}
+.hero:not(.treatment-hero){position:relative;isolation:isolate;min-height:650px;grid-template-columns:51% 49%;background:radial-gradient(ellipse at 60% 30%,#fff8f1 0%,#f1e2d2 78%);overflow:hidden}
+.hero:not(.treatment-hero) .herocopy{position:relative;z-index:2;padding:76px 7% 85px 11%}
+.hero:not(.treatment-hero) h1{font-size:clamp(54px,5.7vw,96px);line-height:1.02;max-width:790px;letter-spacing:-.045em;margin:32px 0 24px}
+.hero:not(.treatment-hero) p{max-width:600px;font-size:clamp(17px,1.7vw,25px);line-height:1.5}
+.hero:not(.treatment-hero) img{min-height:650px;height:650px;object-fit:cover;object-position:center 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 22%);mask-image:linear-gradient(to right,transparent 0%,#000 22%)}
+.hero:not(.treatment-hero)::after{content:"";position:absolute;right:-65px;bottom:-90px;width:340px;height:470px;opacity:.32;pointer-events:none;background:radial-gradient(ellipse 20px 85px at 60% 22%,transparent 91%,#b99351 96%,transparent 100%),radial-gradient(ellipse 24px 105px at 30% 48%,transparent 91%,#b99351 96%,transparent 100%),radial-gradient(ellipse 20px 90px at 75% 70%,transparent 91%,#b99351 96%,transparent 100%);transform:rotate(-25deg)}
+.hero:not(.treatment-hero) .herocopy small{display:none}
+@media(max-width:850px){header{height:80px}.hero:not(.treatment-hero){grid-template-columns:1fr;min-height:auto}.hero:not(.treatment-hero) .herocopy{padding:65px 7% 35px}.hero:not(.treatment-hero) h1{font-size:clamp(46px,9vw,72px)}.hero:not(.treatment-hero) img{height:480px;min-height:480px;max-height:none;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 18%);mask-image:linear-gradient(to bottom,transparent 0%,#000 18%)}}
+@media(max-width:550px){header .logo{width:165px}.hero:not(.treatment-hero) .herocopy{padding:58px 7% 20px}.hero:not(.treatment-hero) h1{font-size:clamp(46px,11vw,62px)}.hero:not(.treatment-hero) p{font-size:17px}.hero:not(.treatment-hero) img{height:360px;min-height:360px}}

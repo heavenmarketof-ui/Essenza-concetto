@@ -51,20 +51,34 @@ footer .logo img{filter:brightness(0) invert(1);opacity:.86}
  .hero.hero-official h1{font-size:clamp(40px,9vw,64px)!important}
 }
 
-/* Mobile-only refinements; desktop cover remains unchanged */
+
+/* Mobile hero: photograph as a true background, copy overlaid on left */
 @media(max-width:850px){
- header{height:76px!important;padding:0 5%!important;gap:10px!important}
- header .logo{width:clamp(125px,36vw,185px)!important;flex-shrink:1!important}
- header .navcta{font-size:clamp(9px,2.4vw,12px)!important;padding:11px 13px!important;white-space:nowrap!important}
- .hero.hero-official>img{width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;display:block!important}
- .hero.hero-official .herocopy{padding:24px 6% 38px!important}
- .hero.hero-official .eyebrow{font-size:10px!important;letter-spacing:.18em!important}
- .hero.hero-official h1{font-size:clamp(35px,8.1vw,51px)!important;line-height:1.08!important;margin:15px 0 12px!important}
- .hero.hero-official p{font-size:15px!important;line-height:1.55!important;margin:0!important}
- .hero.hero-official .button{font-size:13px!important;padding:14px 20px!important;margin-top:21px!important}
+ header{height:74px!important;padding:0 5%!important}
+ header .logo{width:clamp(125px,35vw,180px)!important}
+ header .navcta{font-size:clamp(9px,2.2vw,12px)!important;padding:10px 12px!important}
+ .hero.hero-official{
+  display:flex!important;flex-direction:row!important;align-items:center!important;
+  width:100%!important;min-height:0!important;height:auto!important;aspect-ratio:4/3!important;
+  background:#f5e6d8 url('/file_00000000f880820ead638f0a758614c9.png?v=mobile-overlay-1') center center / cover no-repeat!important;
+  overflow:hidden!important;
+ }
+ .hero.hero-official>img{display:none!important}
+ .hero.hero-official .herocopy{
+  position:relative!important;order:0!important;width:56%!important;
+  padding:12px 0 12px 5%!important;background:transparent!important;
+  align-items:flex-start!important;justify-content:center!important;
+ }
+ .hero.hero-official .eyebrow{font-size:clamp(7px,1.5vw,10px)!important;letter-spacing:.12em!important}
+ .hero.hero-official h1{
+  font-size:clamp(23px,5.2vw,39px)!important;line-height:1.06!important;
+  margin:10px 0!important;letter-spacing:-.035em!important;
+ }
+ .hero.hero-official p{font-size:clamp(10px,2vw,14px)!important;line-height:1.35!important;margin:0!important}
+ .hero.hero-official .button{font-size:clamp(9px,1.8vw,12px)!important;padding:11px 13px!important;margin-top:15px!important}
 }
 @media(max-width:390px){
- header .logo{width:130px!important}
- header .navcta{font-size:9px!important;padding:10px 11px!important}
- .hero.hero-official h1{font-size:clamp(32px,8.1vw,39px)!important}
+ .hero.hero-official{aspect-ratio:1/1!important;background-position:58% center!important}
+ .hero.hero-official .herocopy{width:58%!important}
+ .hero.hero-official h1{font-size:clamp(22px,5.8vw,29px)!important}
 }

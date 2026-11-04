@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node -e \"require('fs').copyFileSync('a_polished_elegant_beauty_spa_style_promotional_b.png','public/essenza-banner.png')\" && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

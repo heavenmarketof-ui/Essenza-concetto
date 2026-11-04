@@ -1,1 +1,29 @@
 *{box-sizing:border-box}body{margin:0;background:#fcfaf7;color:#3d382f;font-family:'DM Sans',sans-serif}a{text-decoration:none;color:inherit}header{height:95px;padding:0 6%;display:flex;align-items:center;justify-content:space-between}nav{display:flex;gap:32px;font-size:13px}.logo{display:flex;flex-direction:column;color:#92734d;text-align:center}.logo strong{font:400 28px 'Playfair Display',serif;letter-spacing:.1em}.logo em{font:italic 19px 'Playfair Display',serif}.navcta{font-size:13px;border-bottom:1px solid #947b5b;padding:10px}.hero{display:grid;grid-template-columns:1fr 1fr;min-height:650px;background:#f2ede5}.herocopy{padding:90px 11%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.eyebrow{font-size:11px;letter-spacing:.2em;color:#978261;font-weight:600}.hero h1{font:400 clamp(55px,6vw,95px)/1.1 'Playfair Display',serif;margin:25px 0}.hero p,.center p,.contact p{line-height:1.9;color:#776e63;font-size:17px}.hero img{width:100%;height:100%;min-height:650px;object-fit:cover}.button{background:#776448;color:white;padding:20px 28px;display:inline-block;font-size:13px;margin-top:25px}.hero small{margin-top:40px;color:#a2998b}.center{text-align:center;padding:120px 8%;max-width:950px;margin:auto}.center h2,.services h2,.contact h2{font:400 clamp(36px,4vw,57px)/1.25 'Playfair Display',serif}.services{padding:95px 6%;background:#f5f0e9}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.cards a{background:white}.cards img{width:100%;height:310px;object-fit:cover}.cards a>div{padding:28px}.cards h3{font:400 27px 'Playfair Display',serif}.cards p{font-size:13px;color:#80766a;min-height:45px}.cards span{font-size:12px}.contact{text-align:center;background:#e9e3d7;padding:100px 20px}.contact p{max-width:580px;margin:auto}footer{text-align:center;background:#393b32;color:white;padding:70px 20px;display:flex;align-items:center;flex-direction:column;gap:15px}footer .logo{color:#d8c5a0}footer small{color:#aaa}.admin{padding:50px max(6%,calc((100vw - 850px)/2));background:#f6f2eb;min-height:100vh}.admin h1,.admin h2{font-family:'Playfair Display',serif}.admin form,.admin label{display:flex;flex-direction:column;gap:10px}.admin label{margin:15px 0;font-size:13px}.admin input,.admin textarea{padding:13px;border:1px solid #d9cdbd;background:white}.admin button{padding:13px 25px;background:#776448;color:white;border:0;cursor:pointer}.admin details{background:white;padding:20px;margin:12px 0}.admin summary{cursor:pointer}@media(max-width:850px){header{height:85px}nav{display:none}.hero{grid-template-columns:1fr}.herocopy{padding:75px 8%}.hero img{min-height:420px;height:420px}.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:550px){.navcta{font-size:11px}.logo strong{font-size:21px}.logo em{font-size:15px}.cards{grid-template-columns:1fr}.center{padding:80px 7%}.hero h1{font-size:56px}}
+/* Essenza premium identity */
+body{background:#fcf8f2;color:#39382d}
+header{height:112px;padding:0 5%;background:#fffaf4;gap:26px;position:relative;z-index:5}
+header .logo{display:block;width:270px;flex-shrink:0}
+.logo img{display:block;width:100%;height:auto}
+header nav{gap:32px;font-size:15px;color:#3c3b33;align-items:center}
+header nav a:hover{color:#a57b36}
+.navcta,.button{background:#535c29;color:#fff;border:0;border-radius:999px;box-shadow:0 8px 24px #535c2920;transition:background .2s,transform .2s;font-weight:600}
+.navcta{padding:16px 25px;white-space:nowrap;font-size:13px}
+.navcta:hover,.button:hover{background:#6d7739;transform:translateY(-2px)}
+.hero{background:linear-gradient(110deg,#f9f0e6,#eee0d0);min-height:590px;grid-template-columns:52% 48%}
+.herocopy{padding:76px 9% 76px 10%}
+.hero h1{font-size:clamp(48px,5.2vw,82px);color:#565c31;line-height:1.12;letter-spacing:-.025em}
+.hero p{font-size:18px;line-height:1.65;max-width:510px}
+.hero img{min-height:590px;max-height:690px;object-fit:cover;object-position:center 35%}
+.eyebrow{color:#ad883e;font-size:12px;letter-spacing:.23em}
+.button{font-size:15px;padding:18px 31px}
+.services{background:#f5eee5}
+.cards a{border-radius:9px;overflow:hidden;box-shadow:0 9px 30px #5c4d2c0b;transition:transform .2s}
+.cards a:hover{transform:translateY(-4px)}
+.cards h3{color:#555a30}
+.contact{background:#eae4d5}
+footer{background:#343a29}
+footer .logo{width:230px}
+footer .logo img{filter:brightness(0) invert(1);opacity:.86}
+@media(max-width:1050px){header{padding:0 3%;gap:12px}header .logo{width:220px}header nav{gap:15px;font-size:13px}.navcta{padding:13px 17px}}
+@media(max-width:850px){header{height:86px;padding:0 5%}header .logo{width:220px}header nav{display:none}.hero{grid-template-columns:1fr}.herocopy{padding:65px 8%}.hero img{height:430px;min-height:430px;max-height:none}}
+@media(max-width:550px){header{height:76px}header .logo{width:175px}.navcta{font-size:10px;padding:12px 11px}.hero h1{font-size:clamp(42px,11vw,58px)}.hero p{font-size:16px}.herocopy{padding:65px 7%}.hero img{height:330px;min-height:330px}.cards{grid-template-columns:1fr}}

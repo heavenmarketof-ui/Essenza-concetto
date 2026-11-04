@@ -67,3 +67,9 @@ header{height:116px;background:#fbf7f0}
 .mobile-hero-copy{padding:28px 7% 48px}
 .mobile-hero-copy h1{font-size:clamp(43px,10vw,55px)}
 }
+
+/* Clean uploaded hero photograph, no embedded copy */
+.hero-banner{display:none!important}
+.hero-fallback{display:grid!important}
+.hero-fallback img{content:url('/file_00000000f880820ead638f0a758614c9.png')!important}
+@media(max-width:850px){.hero-fallback{display:grid!important}}
